@@ -22,9 +22,21 @@ async function loadResults() {
         div.appendChild(img);
         div.appendChild(title);
 
-        // Click to select album
+       // Click to select album
         div.onclick = () => {
-            alert("You selected: " + album.name);
+
+            const selectedAlbum = {
+                name: album.name,
+                artist: album.artists[0].name,
+                image: album.images[0].url
+            };
+
+            sessionStorage.setItem(
+                "selectedAlbum",
+                JSON.stringify(selectedAlbum)
+            );
+
+            window.location.href = "rank.html";
         };
 
         resultsDiv.appendChild(div);

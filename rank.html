@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rank Album</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Rank this album</h1>
+
+    <div id="album"></div>
+
+    <label for="vocals">Vocals: <span id="vocalsValue">5</span>/10</label>
+
+    <br><br>
+
+    <input
+        type="range"
+        id="vocals"
+        min="0.0"
+        max="10.0"
+        step="0.1"
+        value="5.0"
+    >
+
+    <br><br>
+
+    <label for="production">Production: <span id="productionValue">5</span>/10</label>
+
+    <br><br>
+
+    <input
+        type="range"
+        id="production"
+        min="0"
+        max="10"
+        step="0.1"
+        value="5"
+    >
+
+    <br><br>
+
+    <label for="lyrics">Lyrics: <span id="lyricsValue">5</span>/10</label>
+
+    <br><br>
+
+    <input
+        type="range"
+        id="lyrics"
+        min="0"
+        max="10"
+        step="0.1"
+        value="5"
+    >
+
+    <br><br>
+
+    <label for="storytelling">Storytelling: <span id="storytellingValue">5</span>/10</label>
+
+    <br><br>
+
+    <input
+        type="range"
+        id="storytelling"
+        min="0"
+        max="10"
+        step="0.1"
+        value="5"
+    >
+
+    <br><br>
+
+    <button id="save">Save ranking</button>
+    <button id="home">Back to main page</button>
+
+    <script src="rank.js"></script>
+
+</body>
+</html>
